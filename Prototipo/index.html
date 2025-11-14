@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kua Detalles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #ff8e8e;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .producto {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            width: 200px;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .seccion {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kua Detalles</h1>
+        <p>Detalles que endulzan tus momentos</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <div class="container">
+      
+        <div id="inicio" class="seccion">
+            <h2>Bienvenidos a Kua Detalles</h2>
+            <p>Ofrecemos dulceros, palomitas, hot dogs, gelatinas, jugos y velas aromáticas para tus eventos especiales.</p>
+            
+            <div style="background-color: #eee; padding: 20px; text-align: center; margin: 20px 0;">
+                <h3>Imagen principal del negocio</h3>
+                <p>[foto de los productos]</p>
+            </div>
+        </div>
+        
+        <div id="productos" class="seccion">
+            <h2>Nuestros Productos</h2>
+            
+            <div class="producto">
+                <h3>Dulceros</h3>
+                <div style="background-color: #ddd; height: 100px; display: flex; align-items: center; justify-content: center;">
+                    Imagen del producto
+                </div>
+                <p>Precio: $150</p>
+                <button class="boton">Comprar por WhatsApp</button>
+            </div>
+            
+            <div class="producto">
+                <h3>Palomitas</h3>
+                <div style="background-color: #ddd; height: 100px; display: flex; align-items: center; justify-content: center;">
+                    Imagen del producto
+                </div>
+                <p>Precio: $80</p>
+                <button class="boton">Comprar por WhatsApp</button>
+            </div>
+            
+            <div class="producto">
+                <h3>Velas Aromáticas</h3>
+                <div style="background-color: #ddd; height: 100px; display: flex; align-items: center; justify-content: center;">
+                    Imagen del producto
+                </div>
+                <p>Precio: $120</p>
+                <button class="boton">Comprar por WhatsApp</button>
+            </div>
+        </div>
+        
+        <div id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>¡Contáctanos para hacer tu pedido!</p>
+            
+            <form>
+                <div style="margin-bottom: 15px;">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" style="width: 300px; padding: 5px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" style="width: 300px; padding: 5px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" style="width: 300px; height: 100px; padding: 5px;"></textarea>
+                </div>
+                
+                <button type="button" class="boton">Enviar mensaje</button>
+            </form>
+            
+            <div style="margin-top: 30px;">
+                <h3>Información de contacto</h3>
+                <p>Teléfono: 123-456-7890</p>
+                <p>Horario: Lunes a Sábado 9am - 7pm</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kua Detalles &copy; 2023 - Todos los derechos reservados</p>
+        <p>Síguenos en redes sociales</p>
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Gracias por tu interés! Te contactaremos pronto.");
+        }
+        
+        document.querySelectorAll('.boton').forEach(boton => {
+            boton.addEventListener('click', mostrarMensaje);
+        });
+    </script>
+</body>
+</html>
